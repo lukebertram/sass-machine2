@@ -1,0 +1,23 @@
+.intro{
+  min-height: 200px; //temporary
+  width: 100%;
+}
+
+.intro-copy {
+  background: $intro-bg-color;
+}
+
+.intro-img {
+  background: orange;
+  display: none;
+}
+
+@media #{$tablet} {
+  .intro-img {
+    display: block;
+  }
+}
+
+@media #{$desktop} {
+
+}

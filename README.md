@@ -42,12 +42,16 @@ Throughout the process, I found myself wishing I had more concrete examples of e
 Once we got to day 2 of the project, I felt that things started to go much more smoothly. Perhaps I was just less uneasy once we were able to start implementing our proposed solutions to our various layout problems. That said, I wish we'd had more time to do the actual work of building the Sass. While my pair and I were making good progress, by the end of the day we were still a ways off from achieving even the basic layout laid forth in our wireframe.
 
 If we could do this project again I feel it would go more smoothly now that I have some idea of what to expect from the whole process. I feel confident that I could more effectively break down design goals and competently research possible methods of achieving them before even beginning to code. But I'm not sure if there's room in the course's schedule for us to do this all again.
+
 #### Changes in Approach for Independent Project
-_how you will change your approach today. Of course you won't be pairing, so working alone is a given. Beyond that, did you learn something about a specific tool that will change your approach today? Did you learn something from your pair's process and workflow that will inform your work? How about the way you segment your work, apply styles, and commit?_
 
 Yesterday, my pair and I decided to work in parallel to help brush up on our group git workflow. While we did encounter some unexpected problems (using Sass requires additional files/directories to be ignored to prevent painful merge processes) the idea of branching to implement each new component/layout element seems like a good model to follow for future group projects. I would like to try to do this even when working on my own just to get more accustomed to it.
 
 Additionally, when writing our index.html file, my pair utilized semantic divisions in laying out the webpage and informed me that they are a useful convention in making a webpage more accessible to screen-readers and the like. I would like to adopt this practice myself, as even setting aside accessibility issues, it feels like a simple way to write slightly more descriptive and readable code.
+
+#### Independent Project Research
+
+We didn't have the chance to implement a grid in our 2-day project, but I want to use one for this project's alternate layout. While I enjoyed Sass's ability to generate a Bootstrap-style grid system through the use of loops, I want to know if there is a way to use the now-widely-supported CSS Grid system to achieve the same results. I intend to research this as a part of today's project.
 
 ## Technologies Used
 

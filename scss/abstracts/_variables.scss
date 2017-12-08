@@ -1,0 +1,19 @@
+// COLORS
+$light-gray: #ccc;
+$mid-gray: #888;
+$dark-gray: #444;
+
+// GRID PROPERTIES
+$grid-columns: 12; //number of columns in the grid
+
+// HEADER PROPERTIES
+$header-height: 80px;
+$header-bg-color: #333;
+
+// HERO PROPERTIES
+
+// INTRO/WELCOME PROPERTIES
+$intro-bg-color: $light-gray;
+// MEDIA QUERY BREAKPOINTS
+$tablet: "only screen and (min-width: 700px)";
+$desktop: "only screen and (min-width: 1200px)";
