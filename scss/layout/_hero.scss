@@ -1,8 +1,48 @@
 .hero{
-  min-height: 400px; //temporary testing value
-  width: 100%;
+  min-height: $hero-min-height-sm; //temporary testing value
+  background-color: $dark-gray;
+  margin-left: -$grid-pad-sm;
+  margin-bottom: $grid-pad-sm;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.hero-header{
+  font-size: 14.286vw;
+  font-family: $merriweather;
+  font-weight: 900;
+  color: $light-gray;
+}
+.hero-header-top{
+  @extend .hero-header;
+  letter-spacing: -1.175vw;
+  font-weight: 700;
+}
+.hero-header-bottom{
+  @extend .hero-header;
+  letter-spacing: 10px;
+}
+.hero-header-emote{
+  @extend .hero-header;
+}
+
+@media #{$tablet} {
+
+}
+
+@media #{$desktop} {
+  .hero{
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .hero-header{
+    font-size: 171px;
+  }
+  .hero-header-top {
+    letter-spacing: -14px;
+  }
 }

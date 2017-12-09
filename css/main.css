@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather:700,900");
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -56,21 +57,25 @@ table {
 body {
   font-family: Helvetica, Arial, sans-serif; }
 
+body {
+  background: #111; }
+
 .card {
   background: #ccc; }
 
 .container {
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 100vw;
-  background: #888; }
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100vw; }
 
 .row {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-gap: 10px; }
+  grid-gap: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px; }
 
 .col-sm-1 {
   grid-column: span 1; }
@@ -111,8 +116,8 @@ body {
 @media only screen and (min-width: 700px) {
   .row {
     grid-gap: 15px;
-    padding-top: 15px;
-    padding-bottom: 15px; }
+    padding-top: 7.5px;
+    padding-bottom: 7.5px; }
 
   .col-md-1 {
     grid-column: span 1; }
@@ -156,8 +161,8 @@ body {
 
   .row {
     grid-gap: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px; }
+    padding-top: 10px;
+    padding-bottom: 10px; }
 
   .col-lg-1 {
     grid-column: span 1; }
@@ -196,17 +201,43 @@ body {
     grid-column: span 12; } }
 .header {
   width: 100vw;
-  height: 80px;
+  height: 50px;
   background: #333; }
 
 .hero {
-  min-height: 400px;
-  width: 100%;
+  min-height: 250px;
+  background-color: #444;
+  margin-left: -10px;
+  margin-bottom: 10px;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
 
+.hero-header, .hero-header-top, .hero-header-bottom, .hero-header-emote {
+  font-size: 14.286vw;
+  font-family: "'Merriweather', serif";
+  font-weight: 900;
+  color: #ccc; }
+
+.hero-header-top {
+  letter-spacing: -1.175vw;
+  font-weight: 700; }
+
+.hero-header-bottom {
+  letter-spacing: 10px; }
+
+@media only screen and (min-width: 1200px) {
+  .hero {
+    margin-left: 0;
+    width: 100%; }
+
+  .hero-header, .hero-header-top, .hero-header-bottom, .hero-header-emote {
+    font-size: 171px; }
+
+  .hero-header-top {
+    letter-spacing: -14px; } }
 .intro {
   min-height: 200px;
   width: 100%; }
@@ -215,7 +246,9 @@ body {
   background: #ccc; }
 
 .intro-img {
-  background: orange;
+  background-image: url("../img/intro-img.png");
+  background-size: cover;
+  background-position: center;
   display: none; }
 
 @media only screen and (min-width: 700px) {

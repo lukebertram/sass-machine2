@@ -53,6 +53,8 @@ Additionally, when writing our index.html file, my pair utilized semantic divisi
 
 We didn't have the chance to implement a grid in our 2-day project, but I want to use one for this project's alternate layout. While I enjoyed Sass's ability to generate a Bootstrap-style grid system through the use of loops, I want to know if there is a way to use the now-widely-supported CSS Grid system to achieve the same results. I intend to research this as a part of today's project.
 
+I'm also looking into how to use relatively-sized text to create a dynamic header to sit within the page's hero section. I would like the text to responsively resize with the window and take up as much of the hero container's width as possible.
+
 ## Technologies Used
 
 Most notably, these projects focused on utilizing the unique functionalities of SASS to more efficiently generate the final CSS stylesheet for the webpage. Below is a list of Sass features and how they were implemented in the original 2-day project:

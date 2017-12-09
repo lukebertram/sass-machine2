@@ -2,18 +2,31 @@
 $light-gray: #ccc;
 $mid-gray: #888;
 $dark-gray: #444;
+$near-black: #111;
+
+//FONT-FAMILIES
+$merriweather: "'Merriweather', serif";
 
 // GRID PROPERTIES
 $grid-columns: 12; //number of columns in the grid
+$grid-pad-sm: 10px;
+$grid-pad-md: 15px;
+$grid-pad-lg: 20px;
 
 // HEADER PROPERTIES
-$header-height: 80px;
+$header-height-sm: 50px;
+$header-height-md: 70px;
+$header-height-lg: 80px;
 $header-bg-color: #333;
 
 // HERO PROPERTIES
+$hero-min-height-sm: 250px;
+$hero-min-height-md: 400px;
 
 // INTRO/WELCOME PROPERTIES
 $intro-bg-color: $light-gray;
+$intro-img-url: url('../img/intro-img.png');
+
 // MEDIA QUERY BREAKPOINTS
 $tablet: "only screen and (min-width: 700px)";
 $desktop: "only screen and (min-width: 1200px)";

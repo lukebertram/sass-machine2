@@ -8,7 +8,9 @@
 }
 
 .intro-img {
-  background: orange;
+  background-image: url('../img/intro-img.png');
+  background-size: cover;
+  background-position: center;
   display: none;
 }
 

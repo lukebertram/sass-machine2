@@ -1,17 +1,17 @@
 .container {
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: $grid-pad-sm;
+  padding-right: $grid-pad-sm;
   width: 100vw;
-  // min-height: 200px;
-  background: $mid-gray;
 }
 
 .row {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-gap: 10px;
+  grid-gap: $grid-pad-sm;
+  padding-top: $grid-pad-sm / 2;
+  padding-bottom: $grid-pad-sm / 2;
 }
 
 @for $i from 1 through $grid-columns {
@@ -22,9 +22,9 @@
 
 @media #{$tablet} {
   .row {
-    grid-gap: 15px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    grid-gap: $grid-pad-md;
+    padding-top: $grid-pad-md / 2;
+    padding-bottom: $grid-pad-md / 2;
   }
   @for $i from 1 through $grid-columns {
     .col-md-#{$i}{
@@ -38,9 +38,9 @@
     padding: 0 20px;
   }
   .row {
-    grid-gap: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    grid-gap: $grid-pad-lg;
+    padding-top: $grid-pad-lg / 2;
+    padding-bottom: $grid-pad-lg / 2;
   }
 
   @for $i from 1 through $grid-columns {
