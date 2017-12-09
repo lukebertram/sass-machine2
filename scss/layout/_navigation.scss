@@ -1,8 +1,8 @@
-.nav {
-  display: none;
+.nav{
+  display: flex;
 }
-
 .nav-link{
+  display: none;
   font-size: 0.8em;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
   text-transform: uppercase;
@@ -11,12 +11,24 @@
     color: #fff;
   }
 }
+.menu-burger{
+  font-size: 2em;
+  border: 2px solid #777;
+  border-radius: 4px;
+  padding: 4px;
+}
 
 @media #{$tablet} {
   .nav{
     width: 50%;
     display: flex;
     justify-content: space-around;
+  }
+  .nav-link{
+    display: block;
+  }
+  .menu-burger{
+    display: none;
   }
 }
 
