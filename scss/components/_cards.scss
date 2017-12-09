@@ -2,7 +2,7 @@
   background: $light-gray;
   // display: flex;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(12, 1fr);
   grid-gap: 0;
   min-height: 150px; //test value, remove before production
   // padding: $grid-pad-sm;
@@ -16,16 +16,14 @@
   }
 }
 .card-image{
-  display: none;
-  flex: auto;
-  flex-basis: 1;
+  grid-column: span 4;
   background-color: $dark-gray;
   border-radius: $card-radius 0 0 $card-radius;
   // margin: (-$grid-pad-sm) 0 (-$grid-pad-sm) (-$grid-pad-sm);
 
 }
 .card-copy{
-  grid-column: span 3;
+  grid-column: span 8;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -36,7 +34,10 @@
 @media #{$tablet} {
   .card {
     .card-image{
-      display: block;
+      grid-column: span 3
+    }
+    .card-copy{
+      grid-column: span 9;
     }
   }
 }
@@ -44,13 +45,13 @@
 @media #{$desktop} {
   .card{
     .card-image{
-      grid-column: span 4;
+      grid-column: span 12;
       border-radius: $card-radius $card-radius 0 0;
       min-height: 100px;
     }
     .card-copy{
       min-height: 200px;
-      grid-column: span 4;
+      grid-column: span 12;
     }
     &:nth-child(even){
       .card-image{
