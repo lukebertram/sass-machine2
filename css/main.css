@@ -81,6 +81,21 @@ a {
   background-color: #444;
   border-radius: 5px 0 0 5px; }
 
+#card-img-1 {
+  background-image: url("../img/bubble1.jpg");
+  background-position: center;
+  background-size: cover; }
+
+#card-img-2 {
+  background-image: url("../img/bubble2.png");
+  background-position: center;
+  background-size: cover; }
+
+#card-img-3 {
+  background-image: url("../img/bubble3.jpg");
+  background-position: top center;
+  background-size: cover; }
+
 .card-copy {
   grid-column: span 8;
   display: flex;
@@ -97,7 +112,7 @@ a {
   .card .card-image {
     grid-column: span 12;
     border-radius: 5px 5px 0 0;
-    min-height: 100px; }
+    min-height: 200px; }
   .card .card-copy {
     min-height: 200px;
     grid-column: span 12; }
