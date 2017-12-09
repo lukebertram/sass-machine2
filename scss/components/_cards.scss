@@ -1,3 +1,12 @@
 .card {
   background: $light-gray;
+  border-radius: 0 $card-radius $card-radius 0;
+  min-height: 150px; //test value, remove before production
+  padding: $grid-pad-sm;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  &:nth-child(even){
+    border-radius: $card-radius 0 0 $card-radius;
+  }
 }

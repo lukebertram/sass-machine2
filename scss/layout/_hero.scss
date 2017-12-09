@@ -1,5 +1,8 @@
 .hero{
-  min-height: $hero-min-height-sm; //temporary testing value
+  min-height: $hero-min-height-sm;
+  background-image: url('../img/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
   background-color: $dark-gray;
   margin-left: -$grid-pad-sm;
   margin-bottom: $grid-pad-sm;
@@ -14,7 +17,7 @@
   font-size: 14.286vw;
   font-family: $merriweather;
   font-weight: 900;
-  color: $light-gray;
+  color: rgba(0, 0, 0, 0.4);
 }
 .hero-header-top{
   @extend .hero-header;

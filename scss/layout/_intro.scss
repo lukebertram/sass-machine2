@@ -4,7 +4,15 @@
 }
 
 .intro-copy {
+  display: flex;
+  align-items: center;
   background: $intro-bg-color;
+  padding: $grid-pad-sm;
+  p {
+    font-size: 1.2em;
+    font-weight: 200;
+    line-height: 20px;
+  }
 }
 
 .intro-img {

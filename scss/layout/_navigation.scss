@@ -1,0 +1,20 @@
+.nav {
+  display: none;
+}
+
+.nav-link{
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+  text-transform: uppercase;
+  color: $mid-gray;
+  &:hover, &:active {
+    color: $light-gray;
+  }
+}
+
+@media #{$tablet} {
+  .nav{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+  }
+}

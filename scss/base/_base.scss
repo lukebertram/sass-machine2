@@ -1,3 +1,9 @@
 body{
   background: $near-black;
 }
+a {
+  color: $light-gray;
+  &:hover, &:active{
+    color: #fff;
+  }
+}
