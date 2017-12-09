@@ -1,12 +1,63 @@
 .card {
   background: $light-gray;
-  border-radius: 0 $card-radius $card-radius 0;
+  // display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0;
   min-height: 150px; //test value, remove before production
-  padding: $grid-pad-sm;
+  // padding: $grid-pad-sm;
+
+  border-radius: $card-radius;
+  &:nth-child(even){
+    .card-image {
+      order: 2;
+      border-radius: 0 $card-radius $card-radius 0;
+    }
+  }
+}
+.card-image{
+  display: none;
+  flex: auto;
+  flex-basis: 1;
+  background-color: $dark-gray;
+  border-radius: $card-radius 0 0 $card-radius;
+  // margin: (-$grid-pad-sm) 0 (-$grid-pad-sm) (-$grid-pad-sm);
+
+}
+.card-copy{
+  grid-column: span 3;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  &:nth-child(even){
-    border-radius: $card-radius 0 0 $card-radius;
+  // flex-basis: 3;
+  // flex-grow: 2;
+  padding: $grid-pad-sm;
+}
+@media #{$tablet} {
+  .card {
+    .card-image{
+      display: block;
+    }
+  }
+}
+
+@media #{$desktop} {
+  .card{
+    .card-image{
+      grid-column: span 4;
+      border-radius: $card-radius $card-radius 0 0;
+      min-height: 100px;
+    }
+    .card-copy{
+      min-height: 200px;
+      grid-column: span 4;
+    }
+    &:nth-child(even){
+      .card-image{
+        order: 0;
+        //radius necessary to override specificity of defualt even setting
+        border-radius: $card-radius $card-radius 0 0;
+      }
+    }
   }
 }
