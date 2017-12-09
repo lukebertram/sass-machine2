@@ -6,9 +6,9 @@
   font-size: 0.8em;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
   text-transform: uppercase;
-  color: $mid-gray;
+  color: $light-gray;
   &:hover, &:active {
-    color: $light-gray;
+    color: #fff;
   }
 }
 

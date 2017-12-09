@@ -243,11 +243,14 @@ a {
 .header {
   width: 100vw;
   height: 50px;
-  background: #333;
+  background: #888;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 15px; }
+  padding: 0 15px 0 0; }
+  .header img {
+    height: 100%;
+    width: auto; }
 
 .hero {
   min-height: 250px;
@@ -316,9 +319,9 @@ a {
   font-size: 0.8em;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
   text-transform: uppercase;
-  color: #888; }
+  color: #ccc; }
   .nav-link:hover, .nav-link:active {
-    color: #ccc; }
+    color: #fff; }
 
 @media only screen and (min-width: 500px) {
   .nav {
